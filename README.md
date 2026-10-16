@@ -29,7 +29,7 @@ Employment: [] Employed [] Unemployed [] Student [] Retired [] Other
 {employed:opt(e|u|s|r|o)}
 
 Message: []
-{message:req}
+{message:req memo}
 
 [] I have read the [Terms of Service](terms.html)
 {terms: req opt}
@@ -40,6 +40,6 @@ It defines a contact forms with the following fields::
  - a required `email` which only accepts a syntactically correct e-mail address
  - an optional `age` in range(9..99)
  - a single-choosable optional `employed` field with 5 options
- - the required `message`
+ - the required multi-line `message`
  - a required option that the user has read the terms
 
